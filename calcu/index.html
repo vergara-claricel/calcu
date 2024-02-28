@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <div>Activity 0</div>
+            <div>Calculator</div>
+        </div>
+    </header>
+
+    <main>
+        <div class="containerr" id="hehe">
+            <input type="text" id="num1">
+            <input type="text" id="ope">
+            <input type="text" id="num2">
+            <button id="comp" onclick="compute()"> COMPUTE </button>
+        </div>
+        <div>
+            <h1 id="ans"></h1>
+        </div>
+    </main>
+
+
+    <script>
+        const n1 = document.getElementById('num1');
+        const n2 = document.getElementById('num2')
+        const ope = document.getElementById('ope');
+        const ans = document.getElementById('ans');
+
+        function compute(){
+            if (ope.value == "+"){
+                ans.innerHTML = (Number(n1.value) + Number(n2.value));
+            } else if (ope.value == "-"){
+                ans.innerHTML = (Number(n1.value) - Number(n2.value));
+            } else if (ope.value == "*"){
+                ans.innerHTML = (Number(n1.value) * Number(n2.value));
+            } else if (ope.value == "/"){
+                ans.innerHTML = (Number(n1.value) / Number(n2.value));
+            } else if (ope.value == "%"){
+                ans.innerHTML = (Number(n1.value) % Number(n2.value));
+            } else {
+                ans.innerHTML = "INVALID OPERATOR!"
+            }
+        }
+
+    </script>
+</body>
+</html>

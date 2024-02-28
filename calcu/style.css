@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.containerr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#num1, #num2, #ope, #comp {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    margin: 10px;
+}
+
+#ans  {
+    text-align: center;
+}
